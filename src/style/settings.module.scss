@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: start;
+    width: 350px;
+}
+
+.roundsChoice,
+.sizeChoice{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.playerChoice{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

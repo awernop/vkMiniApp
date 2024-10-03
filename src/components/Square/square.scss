@@ -1,0 +1,78 @@
+.square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #2688EB;
+    border-radius: 0px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    span {
+        display: block;
+        position: relative;
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        &.x::after,
+        &.x::before {
+            position: absolute;
+            content: "";
+            width: 150%;
+            height: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            background: #2688EB;
+            border-radius: 5px;
+        }
+
+        &.x::after {
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 1;
+        }
+
+        &.o {
+            border-color: #E64646;
+        }
+    }
+}
+
+
+.square5 {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #2688EB;
+    border-radius: 0px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    span {
+        display: block;
+        position: relative;
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        border: 8px solid transparent;
+        &.x::after,
+        &.x::before {
+            position: absolute;
+            content: "";
+            width: 150%;
+            height: 8px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            background: #2688EB;
+            border-radius: 5px;
+        }
+
+        &.x::after {
+            transform: translate(-50%, -50%) rotate(45deg);
+            opacity: 1;
+        }
+
+        &.o {
+            border-color: #E64646;
+        }
+    }
+}
